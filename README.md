@@ -35,7 +35,7 @@ PS > ReadOnly, Archive
 ```
 ```
 # Running Get-UsnJrnlInfo.ps1 against manual extracted $Max file (e.g. FTK-Imager)
-PS > .\Get-UsnJrnlInfo.ps1 "C:\Users\evild3ad\Desktop\`$Max"
+PS > .\Get-UsnJrnlInfo.ps1 -PathToMaxFile "C:\Users\evild3ad\Desktop\`$Max"
 ```
 ```
 # Running Get-UsnJrnlInfo.ps1 against mounted VHDX-Container (e.g. KAPE)
