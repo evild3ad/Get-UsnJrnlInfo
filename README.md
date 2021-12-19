@@ -1,4 +1,4 @@
-# Get-UsnJrnlInfo
+# Get-UsnJrnlInfo ($Max)
 Get-UsnJrnlInfo.ps1 is a simple PowerShell script utilized to parse $UsnJrnl information from extracted $Max file.  
 
 ## TL;DR
