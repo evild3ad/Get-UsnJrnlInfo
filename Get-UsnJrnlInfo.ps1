@@ -7,7 +7,7 @@ Get-UsnJrnlInfo.ps1 is a simple PowerShell script utilized to parse $UsnJrnl inf
 
 [root]\$Extend\$UsnJrnl:$Max
 
-.PARAMETER Path
+.PARAMETER PathToMaxFile
 Specifies the path to the extracted $Max file.
 
 .EXAMPLE
@@ -70,8 +70,10 @@ Function Get-UsnJrnlInfo
                 Write-Output "[Info]  Allocation Size: $AllocationDelta ( $ByteSize Bytes )"
 
                 # USN ID (Converts Byte Array Into A 64-Bit Unsigned Integer)
-                $UsnId = [Bitconverter]::ToUInt64($ByteArray[16 .. 24], 0)
-                Write-Output "[Info]  USN ID: $UsnId"
+                $UsnIdDec = [Bitconverter]::ToUInt64($ByteArray[16 .. 24], 0)
+                $UsnIdHex = "0x{0:x}" -f 132634203089494385
+                Write-Output "[Info]  USN ID (Decimal): $UsnIdDec"
+                Write-Output "[Info]  USN ID (Hex): $UsnIdHex"
 
                 # Lowest Valid USN (Converts Byte Array Into 64-Bit Integer)
                 $LowestUsn = [Bitconverter]::ToInt64($ByteArray[24 .. 32], 0)
