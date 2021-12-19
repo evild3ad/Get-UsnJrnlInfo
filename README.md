@@ -7,13 +7,13 @@ The NTFS Change Journal (aka USN Journal) is stored in the hidden system file $E
 File Location:  
 `[root]\$Extend\$UsnJrnl:$Max`  
 
-![fsutil](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/master/Screenshots/fsutil.png)
+![fsutil](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/921b1a6fd6701cead96b1c033100392ebb11eb9b/Screenshots/fsutil.png)
 **Fig 1:** You can use fsutil to query the $UsnJrnl information for a specific NTFS volume on a live system.
 
 ## Usage
 1. Mount your forensic image (or VHDX Container) and manually extract the $Max file.  
 
-![FTK-Imager](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/master/Screenshots/FTK-Imager.png)  
+![FTK-Imager](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/921b1a6fd6701cead96b1c033100392ebb11eb9b/Screenshots/FTK-Imager.png)  
 **Fig 2:** Extracting $Max file w/ FTK-Imager  
 
 2. Run Windows PowerShell console as Administrator.  
@@ -37,5 +37,5 @@ PS > .\Get-UsnJrnlInfo.ps1 "C:\Users\evild3ad\Desktop\`$Max"
 PS > .\Get-UsnJrnlInfo.ps1 -PathToMaxFile "G:\C\$Extend\`$Max"
 ```
 
-![Get-UsnJrnlInfo](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/master/Screenshots/Get-UsnJrnlInfo.png)  
+![Get-UsnJrnlInfo](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/921b1a6fd6701cead96b1c033100392ebb11eb9b/Screenshots/Get-UsnJrnlInfo.png)  
 **Fig 3:** Changing File Attributes (if needed) and running Get-UsnJrnlInfo.ps1  
