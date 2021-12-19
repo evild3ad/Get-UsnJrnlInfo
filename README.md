@@ -25,13 +25,13 @@ File Location:
 # Check File Attributes of the $Max File
 PS > $File = Get-ChildItem "C:\Users\evild3ad\Desktop\`$Max" -Force
 PS > $File.Attributes
-PS > Hidden, System
+Hidden, System
 ```
 ```
 # Change File Attributes of the $Max File (Unhide the $Max File)
 PS > $File.Attributes="Archive","ReadOnly"
 PS > $File.Attributes
-PS > ReadOnly, Archive
+ReadOnly, Archive
 ```
 ```
 # Running Get-UsnJrnlInfo.ps1 against manual extracted $Max file (e.g. FTK-Imager)
