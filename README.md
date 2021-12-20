@@ -18,7 +18,7 @@ File Location:
   
 2. Run Windows PowerShell console as Administrator.  
 
-![Get-UsnJrnlInfo](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/921b1a6fd6701cead96b1c033100392ebb11eb9b/Screenshots/Get-UsnJrnlInfo.png)  
+![Get-UsnJrnlInfo](https://github.com/evild3ad/Get-UsnJrnlInfo/blob/dd6a039cdf66122fc30d9dee884b0f9f415ea19e/Screenshots/Get-UsnJrnlInfo.png)  
 **Fig 3:** Changing File Attributes (if needed) and running Get-UsnJrnlInfo.ps1  
 
 ```
